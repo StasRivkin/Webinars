@@ -1,117 +1,81 @@
-.table {
-  width: 1000px;
+.table{
+  width: 900px;
   border-top: 1px solid black;
   margin: 0 auto;
 }
 
-.header {
+.header{
   display: flex;
   height: 50px;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
 }
 
-.name {
-  width: 25%;
-}
-
-.age {
-  width: 10%;
-}
-
-.salary {
-  width: 20%;
-}
-
-.gender {
-  width: 15%;
-}
-
-.email {
+.name{
   width: 30%;
 }
 
-.name,
-.age,
-.salary,
-.gender,
-.email {
+.age{
+  quotes: 10%;
+}
+
+.salary{
+  width: 15%;
+}
+
+.email{
+  width: 30%;
+}
+
+.gender{
+  width: 20%;
+}
+
+.name, .age, .salary, .email, .gender{
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-size: 25px;
   font-weight: 600;
   border-right: 1px solid black;
 }
 
-.add-button {
+.add-button{
   position: absolute;
-  right: 10%;
-  top: 8px;
+  right: 3%;
+  top: 1%;
   width: 100px;
   height: 50px;
 }
 
-.modal-wrapper {
+.modal-wraper{
   width: 100vw;
   height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
-  backdrop-filter: blur(5px);
-  background-color: rgba(212, 212, 212, 0.5);
   display: none;
+  backdrop-filter: blur(5px);
+  background-color: rgb(212, 204, 195, 0.3);
+  z-index: 1;
+  display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
 }
 
-.modal {
+.modal{
   width: 800px;
   height: 500px;
-  background-color: white;
+  background-color: rgb(195, 186, 175);
   padding: 15px;
-  position: relative;
-  box-shadow: 0 1px 2px #00000029;
 }
 
-.combo-container {
+.combo-container{
   display: flex;
+  width: 250px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  width: 600px;
-}
-
-.close-icon {
-  position: absolute;
-  right: 1%;
-  top: 1%;
-  cursor: pointer;
-  font-size: 25px !important;
-}
-
-.submit-button {
-  position: absolute;
-  bottom: 1%;
-  height: 50px;
-  width: 800px;
-}
-input {
-  height: 50px;
-  width: 400px;
-}
-
-label {
-  font-size: 25px;
-}
-
-.list-item {
-  display: flex;
-  height: 50px;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
 }
